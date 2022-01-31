@@ -1,0 +1,140 @@
+@font-face{
+    src: url('../fonts/NunitoSans-Regular.ttf');
+    font-family:Nunuto_Sans;
+}
+@font-face{
+    src: url('../fonts/YesevaOne-Regular.ttf');
+    font-family:YesevaOne;
+}
+body {
+    margin: 0;
+    font-family:Nunuto_Sans ;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1438px;
+    box-sizing: border-box;       
+    height: 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 90px 22px 92px;
+    text-transform: uppercase;
+}
+header {
+    background-color: #131313;
+} 
+.logo {
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #e3b873;
+}
+
+.nav {
+    display:flex;
+    justify-content: space-between;
+    text-decoration:none;
+    list-style-type: none;
+}
+.nav>li {
+    margin-left:47.1px ;
+}
+.nav_a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+#tel {
+    color: #e3b873;
+    font-size: 11px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    text-align: right;
+}
+.button {
+    box-sizing: border-box;
+    background: #e3b873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    color: white;
+    width: 161px;
+    height: 37px;
+    font-style: italic;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0;
+   }
+.button_1 {
+    width: 161px;
+    height: 37px;
+    margin-left: 45px;
+   }
+.button_2 {
+    width: 207px;
+    height: 51px;
+    margin-right: 20px;
+   }
+#butt {
+    background-color: rgba(255, 255, 255, 0%);
+    border: white solid 1px;
+    width: 207px;
+    height: 51px;
+    
+}
+h1{
+    font-family:YesevaOne;
+    font-weight: 100;
+    margin: 0;
+    width: 676px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+    line-height: 53.13px;
+    line-height: 115%;
+    text-align: left;
+    vertical-align: top;
+}
+.block_1 {
+    position: relative;
+    margin: 0;
+    height: 707px;
+    background-image:url(https://s3-alpha-sig.figma.com/img/b08d/1b80/1322e77c0316c416f2e0373bae5eafc5?Expires=1644192000&Signature=UQTvpnH4ZZ-QAQXbmgAfo9umq3pUUHzBI9urHvkF6ZLKGVdx3p~FZhAMUd9P7Tyj-l3~XDV2T2QFRt~qzxhvw5lAPQwmAVuwysZ3JzvfIrX~O~Ve9wZ2TOt21I3VNNnidMC8hKXIo-zG-RfeoeNykJaIQLcVQgw9I~uragR4BYYOuI42-Vgi-GQgwxBcRMHYR1X37SXmsA6cx0uoZEhLdBpUZ0XzQFKl9rL0nCdDQBPDFhj114yK9wMhhLOkvmRy1IsfwPTuo3D0upl1ZW2k5IMIj1iiIYRo74rLZjxXx~y0-7aBqYxH8Nj-NO4wvekRQbwbQ6O7-9fFWj5dvQrtCw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+    background-size: 100% auto;
+    background-position: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.block_1_1 {
+    position: relative;
+    z-index: 1;
+    padding-left: 124px;
+    padding-top: 194px;
+    margin: 0 auto;
+    max-width: 1438px;
+    box-sizing: border-box;   
+}
+
+.title {
+    color: #e3b873;
+}
+.discount { margin-top: 19px;
+    width: 520px;
+    font-size: 22px;
+    line-height: 36.01px;
+    align-content: flex-start;
+    vertical-align: top;
+    color: white;
+    margin-bottom: 41px;
+    
+}
