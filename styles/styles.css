@@ -15,6 +15,10 @@ body {
     margin: 0;
     font-family:Nunuto_Sans;
 }
+.foto_375{
+    display: none;
+}
+.fantasies_375{display: none;}
 
 .header_content {   
     padding-left: 92px;
@@ -105,7 +109,6 @@ header {
 .yo{ 
     font-family:YesevaOne;
     text-transform: uppercase;
-    margin: 0;
 }
 h1{
     font-weight: 100;
@@ -322,7 +325,7 @@ a.active {
     align-items: flex-end;
 
 }
-.form_input.input_3::placeholder{
+.input>input::placeholder{
     color: #363636;
 }
 .input{
@@ -413,6 +416,7 @@ label {
 
  }
  .desing_ul h3{
+     margin-top: 0;
      font-weight: 100;
      font-size: 18px;
      color: #363636;
@@ -435,14 +439,13 @@ label {
     color: white;
     border: 0;
     align-self: flex-start;
-    margin-left: 31px;
+    margin-left: 30px;
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
     margin-top: -26px;
     z-index: 2;
 
  }
  .block_4 {
-    /* height:678.44px; */
     background: color #e5e5e5;
     margin-top: 171px;
  }
@@ -636,7 +639,6 @@ width: 27px;
     background-repeat: no-repeat;
  }
  .block_5 {
-     min-width: 1440px;
      margin-top: 242.1px;
      margin-bottom: 111px;
      position: relative;
@@ -644,10 +646,8 @@ width: 27px;
     background-image:url('../image/BG-I_5.png');
     background-size: 100% auto;
     background-position: center;
-    background-repeat:no-repeat;
  }
-
-    
+     
 .fantasies{
     display: flex;
     position: relative;
@@ -735,8 +735,6 @@ color: #E3B873;
 .example_clients{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 103px;
-    padding-right: 47px;
 
 }
 .client {
@@ -746,10 +744,12 @@ color: #E3B873;
     justify-content: flex-start;
     align-items: center;
 }
+.client_1{
+    margin-right:54px ;
+}
 .client_wrapepr{
     background: #FFFFFF;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
-    margin-right: 54px;
     width: 376px;
 }
 .client>h3 {
@@ -934,4 +934,459 @@ footer {
 }
 .img_description {
     margin-right: 15px;
+}
+
+@media screen and (max-width: 1360px){
+    .style_list>h2 {
+        margin-right: 0;
+    }
+}
+.button_375 {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 375px){
+    .header_content>nav{
+        width: 0;
+        display: none;
+    }
+
+    .tel_button>button{
+        display: none;
+    }
+
+    .header_content {
+        padding:0 18px;
+        height: 57px;
+        justify-content: space-between;
+    }
+    
+    #tel {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .container{
+        width: 100%;
+        margin: 0;
+        max-width: 375px;
+        box-sizing: border-box;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block_1{
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        height: 476px;
+    }
+
+    .block_1_1{
+        padding: 0;
+        height: 476px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    
+    .button_section_1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body{
+        min-width: 375px;
+    }
+
+    .block_2 {
+        height: 690px;
+    }
+
+    .block_2_1{
+        padding: 0;
+        display: flex;
+       position: relative;
+    }
+
+    .rulet{
+    display: none;
+    }
+
+    .project_example{
+        display: none;
+    }
+
+    .control{
+        margin: 0;
+        background-color:#131313 ;
+    }
+
+    .video_img{
+        width: 340px;
+        height: 207px;  
+    }
+
+    .video{
+        width: 340px;
+        height: 207px;
+        margin-top: 40.21PX;
+    }
+
+    .description_control {
+        margin-top: 21.46px;
+        margin-bottom: 0;
+        font-size: 11px;
+        line-height: 19px;
+        width: 340px;
+        color: #FFFFFF;
+    }
+
+    .request_broadcast{
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+    align-items:flex-start;    
+    }
+
+    .form_input{
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .example_desing{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .block_4{
+        display: none;
+    }
+
+    .block_5 {
+        margin: 0;
+        position: relative;
+        height: 220px;
+        background-image:none;
+        background-color: #FFFFFF;
+    }
+
+    .block_5>.overlay{
+        display: none;
+    }
+
+    .style_list>ul{
+        display: none;
+    }
+
+    .fantasies>.gallery{
+        display: none;
+    }
+
+    .block_6{
+        display: none;
+    }
+
+    .questions {
+        order: -2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-start;
+        height: 560px;
+        width: 375px;
+        background: #131313;
+        margin:0;
+    }
+    
+    .block_3 {
+        height:auto;
+        background: color #e5e5e5;
+        
+        
+    }
+    
+    footer{
+        display: none;
+    }
+    h1 {
+        font-size: 23px;
+        line-height: 132.83%;
+        margin-top: 85px;
+        margin-left: 34px;
+        margin-bottom: 16px;
+        width: 375px;
+    }
+    .discount {
+        box-sizing: border-box;
+        margin-top: 0;
+        width: 375px;
+        font-size: 14px;
+        line-height: 135.84%;
+        padding-left: 18px;
+        padding-right: 50px;
+    }
+    .button_2 {
+        width: 338px;
+        height: 51px;
+        margin-right:0;
+        margin-top: 8px;
+        margin-bottom: 26px;
+    }
+    #butt {
+        width: 338px;
+        height: 51px;
+    }
+    .project_info h2 {
+        padding-top: 0px;
+        margin-top: 36px;
+        margin-bottom: 22px;
+        width: 200px;
+        color: #e3b873;
+        font-size: 27px;
+        line-height: 37.42px;
+        font-weight: 100;
+        text-align: center;
+    }
+    .description {
+        text-align: center;
+        width: 300px;
+        margin-top: 0px;
+        margin-bottom: 42px;
+        font-size: 11px;
+        line-height: 158.48%;
+    }
+    .desing_img img {
+        width: 340px;
+        height: auto;
+    }
+    .input_4 {
+        width: 340px;
+        border-bottom: 1px solid white;
+        margin-bottom: 63px;
+    }
+    .input_5 {
+        width: 340px;
+        border-bottom: 1px solid white;
+        margin-bottom: 46.46px;
+    }
+    .questions_1_2{
+        display: flex;
+        flex-direction: column;
+    }
+    .project_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .foto_375{
+        
+        display: block;
+        width: 340px;
+        height: 241.35px;
+        background-image: url('../image/foto_375.png');
+        margin-bottom: 36.65px;
+    }
+    .info_title {
+        font-size: 14px;
+        line-height: 138.6%;
+        margin-top: 0;
+    }
+    .info_content {
+        margin-top: 11px;
+        font-size: 11px;
+        line-height: 18px;
+    }
+    .control h2 {
+        color: white;
+        font-size: 22px;
+        line-height: 30px;
+        margin: 0;
+    }
+    .camera_img {
+        margin-top: 19.79PX;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .br {
+        margin-top: 28PX;
+    }
+    label {
+        font-size: 13px;
+        line-height: 21.28px;
+        color: white;
+    }
+    input{
+        padding: 0;
+        color: white;
+        height: 33px;
+        background-color: #131313;
+    }
+    input::placeholder{
+        color:white;
+    }
+    .form_input {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        align-items:center;
+    }
+    .input_1 {
+        margin-right: 0px;
+        width: 340px;
+        border: none;
+        border-bottom:1px solid white;
+    }
+    .input_2 {
+        margin-top: 63px;
+        margin-right: 0px;
+        width: 340px;
+        border: none;
+        border-bottom:1px solid white;
+    }
+    .button_3{
+        display: none;
+    }
+    .button_375{
+        display: block;
+        box-shadow: 0px 10px 20px rgba(227, 184, 115, 0.1);
+        width: 340px;
+        height: 51px;
+        align-self:center;
+        margin-top: 52.43px;
+        border-radius:0;
+        margin-bottom: -25px;
+    }
+    label::before{
+        border: 1px solid #e5e5e5;
+    background-color: #e5e5e5;
+    }
+    .checkbox {
+        opacity: 0;
+        width: 10px;
+    }
+    .repair {
+        margin-top: 83px;
+        color: #FFFFFF;
+    }
+    .repair h2 {
+        margin-top: 0px;
+        margin-bottom: 4px;
+    }
+    .desing_ul {
+        align-self: flex-start;
+        margin-top: -142.15px;
+        width: 270px;
+        height: 250px;
+        line-height: 22.6px;
+        
+        
+       
+    }
+    .desing_ul h3 {
+        margin-bottom: 10px;
+        font-size: 15px;
+        line-height: 21px;
+        
+        
+    }
+    .button_desing {
+        
+        width: 190.4px;
+        height: 40px;
+        font-size: 15px;
+        line-height: 21px;
+        background: #e3b873;
+        border: 0;
+        align-self: flex-start;
+        margin-left: 0px;
+        margin-top: -20px;
+        z-index: 2;
+        margin-bottom: 29px;
+    }
+    .questions_1_2 {
+        width: 340px;
+        margin-bottom: 0px;
+    }
+    .map { 
+        order: -1;
+        width: 340px;
+        height: 255px; 
+        background-size: auto 100%;
+        background-position: center;
+    }
+    .block_7 {
+        height: 119px;
+        background-image:none;
+        background-color: #131313;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block_7>.overlay {
+        display: none;
+    }
+    .style_list>h2 {
+        text-align: center;
+        width: 340px;
+        margin: 0;
+        font-weight: 100;
+        font-size: 22px;
+        line-height: 30.5px;
+        color: #E3B873;
+        margin-bottom: 34px;
+    }
+    .questions>h3{
+        margin-top: 20px;
+    }
+    .fantasies_375{display:block;
+        width: 340px;
+        height: 242px;
+        background-image: url('../image/BG-I_5.png');
+        background-size: auto 100%;
+        background-position: center;
+
+    }
+    .style_list{
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }    
+    .card{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 110px;
+
+    }
+    .button_questions {
+        width: 340px;
+        height: 51px;
+        margin-top: 50.45px;
+        border-radius: 0;
+    }
+    .card>h2 {
+        text-align: center;
+        font-size: 18px;
+        line-height: 25px;
+        width: 309px;
+    }
+    .card>h2>br{
+        display: none;
+    }
 }
