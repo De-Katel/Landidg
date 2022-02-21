@@ -33,12 +33,18 @@ body {
     margin-left: -20.73px;
 }
 
+.dot_click{
+    cursor: pointer;
+}
+
 .row_left::before{
     content:'⟵';
+    cursor: pointer;
 }
 
 .row_right::after{
     content:'⟶';
+    cursor: pointer;
 }
 
 .row {
@@ -98,9 +104,6 @@ header {
     font-size: 11px;
 }
 
-.nav_a_active {
-    color: #e3b873;
-}
 
 .tel_button {
     display: flex;
@@ -128,6 +131,7 @@ header {
     text-align: center;
     text-transform: uppercase;
     border: 0;
+    cursor: pointer;
 }
 
 .button_1 {
@@ -176,9 +180,10 @@ h2 {
     position: relative;
     margin: 0;
     height: 707px;
-    background-image:url(https://s3-alpha-sig.figma.com/img/b08d/1b80/1322e77c0316c416f2e0373bae5eafc5?Expires=1644192000&Signature=UQTvpnH4ZZ-QAQXbmgAfo9umq3pUUHzBI9urHvkF6ZLKGVdx3p~FZhAMUd9P7Tyj-l3~XDV2T2QFRt~qzxhvw5lAPQwmAVuwysZ3JzvfIrX~O~Ve9wZ2TOt21I3VNNnidMC8hKXIo-zG-RfeoeNykJaIQLcVQgw9I~uragR4BYYOuI42-Vgi-GQgwxBcRMHYR1X37SXmsA6cx0uoZEhLdBpUZ0XzQFKl9rL0nCdDQBPDFhj114yK9wMhhLOkvmRy1IsfwPTuo3D0upl1ZW2k5IMIj1iiIYRo74rLZjxXx~y0-7aBqYxH8Nj-NO4wvekRQbwbQ6O7-9fFWj5dvQrtCw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+    background-image:url('../image/TURNKEY\ REPAIR.jpg');
     background-size: 100% auto;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .overlay {
@@ -285,6 +290,7 @@ h2 {
     color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
     line-height: 19.4px;
+    cursor: pointer;
 }
 
 .project_example li {
@@ -295,10 +301,16 @@ h2 {
     margin-top: 45px;
 }
 
-a.active {
+a:hover {
     color: #e3b873;
     border-bottom: solid #e3b873 1px;
 }
+
+.nav_a:hover {
+    color: #e3b873;
+    border-bottom:none;
+}
+
 
 .control {
     margin-top: -355px;
@@ -508,6 +520,7 @@ label {
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
     margin-top: -26px;
     z-index: 2;
+    cursor: pointer;
 }
  
 .block_4 {
@@ -1008,6 +1021,16 @@ footer {
 }
 
 @media screen and (max-width: 1440px){
+    .block_1 {
+        position: relative;
+        margin: 0;
+        height: 707px;
+        background-image:url('../image/TURNKEY\ REPAIR.jpg');
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
     .block_5 {
         position: relative;
         height: 864px;

@@ -59,15 +59,15 @@
                     <div class="info">
                         <div>
                             <h3 class="yo info_title">City:</h3>
-                            <p class="info_content">Rostov-on-Don<br>LCD admiral</p>
+                            <p id="City" class="info_content">Rostov-on-Don<br>LCD admiral</p>
                         </div>
                         <div>
                             <h3 class="yo info_title">apartment area:</h3>
-                            <p class="info_content">81 m2</p>
+                            <p id="Area" class="info_content">81 m2</p>
                         </div>
                         <div>
                             <h3 class="yo info_title">Repair time:</h3>
-                            <p class="info_content">3.5 months</p>
+                            <p id="Repair_time" class="info_content">3.5 months</p>
                         </div>
                         <div>
                             <h3 class="yo info_title">Repair Cost:</h3>
@@ -76,21 +76,21 @@
                     </div>
                     <div class="rulet">
                         <ul class="rulet_1">
-                            <li class="row row_left"></li>
-                            <li class="dot">•</li>
-                            <li class="dot inactive">•</li>
-                            <li class="dot inactive">•</li>
-                            <li class="row row_right"></li>
+                            <li id="row_left" class="row row_left"></li>
+                            <li id="dot1" class="dot inactive"><span class="dot_click">•</span></li>
+                            <li id="dot2" class="dot inactive"><span class="dot_click">•</span></li>
+                            <li id="dot3" class="dot inactive"><span class="dot_click">•</span></li>
+                            <li id="row_righ" class="row row_right"></li>
                         </ul>
                     </div>
                 </div>
                 <div class="project_example">
                     <ul>
-                        <li><a href="#" class="active yo">Rostov-on-Don, Admiral</a></li>
-                        <li><a href="#" class="yo">Sochi Thieves</a></li>
-                        <li><a href="#" class="yo">Rostov-on-Don Patriotic</a></li>
+                        <li><a id="Admiral" class="yo">Rostov-on-Don, Admiral</a></li>
+                        <li><a id="Sochi" class="yo">Sochi Thieves</a></li>
+                        <li><a id="Patriot" class="yo">Rostov-on-Don Patriotic</a></li>
                     </ul>
-                    <img src="image\image 2.1.png" alt="desing" width="679px" height="482px">
+                    <div id="Image_project"><img src="image\image 2.1.png" alt="desing" width="679px" height="482px"></div>
                 </div>
             </div>
         </section>
@@ -392,6 +392,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/sliler.js"></script>
 </body>
 
 </html>
