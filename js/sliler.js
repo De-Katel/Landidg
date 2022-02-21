@@ -121,16 +121,16 @@ function next() {
         repairTime.innerHTML = galery[0].repairTime;
         currentIndex = 0;
     } else {
-        admiral.style = galery[currentIndex+1].admiralStyle;
-        sochi.style = galery[currentIndex+1].sochiStyle;
-        patriot.style = galery[currentIndex+1].patriotStyle;
-        dot_1.style = galery[currentIndex+1].dot1Color;
-        dot_2.style = galery[currentIndex+1].dot2Color;
-        dot_3.style = galery[currentIndex+1].dot3Color;
-        imageProject.innerHTML = galery[currentIndex+1].imageProject;
-        city.innerHTML = galery[currentIndex+1].cityName;
-        area.innerHTML = galery[currentIndex+1].area;
-        repairTime.innerHTML = galery[currentIndex+1].repairTime;
+        admiral.style = galery[currentIndex + 1].admiralStyle;
+        sochi.style = galery[currentIndex + 1].sochiStyle;
+        patriot.style = galery[currentIndex + 1].patriotStyle;
+        dot_1.style = galery[currentIndex + 1].dot1Color;
+        dot_2.style = galery[currentIndex + 1].dot2Color;
+        dot_3.style = galery[currentIndex + 1].dot3Color;
+        imageProject.innerHTML = galery[currentIndex + 1].imageProject;
+        city.innerHTML = galery[currentIndex + 1].cityName;
+        area.innerHTML = galery[currentIndex + 1].area;
+        repairTime.innerHTML = galery[currentIndex + 1].repairTime;
         currentIndex++;
     }
 }
@@ -139,28 +139,28 @@ function prev() {
 
     if (currentIndex == 0) {
 
-        admiral.style = galery[galery.length-1].admiralStyle;
-        sochi.style = galery[galery.length-1].sochiStyle;
-        patriot.style = galery[galery.length-1].patriotStyle;
-        dot_1.style = galery[galery.length-1].dot1Color;
-        dot_2.style = galery[galery.length-1].dot2Color;
-        dot_3.style = galery[galery.length-1].dot3Color;
-        imageProject.innerHTML = galery[galery.length-1].imageProject;
-        city.innerHTML = galery[galery.length-1].cityName;
-        area.innerHTML = galery[galery.length-1].area;
-        repairTime.innerHTML = galery[galery.length-1].repairTime;
-        currentIndex = (galery.length-1);
+        admiral.style = galery[galery.length - 1].admiralStyle;
+        sochi.style = galery[galery.length - 1].sochiStyle;
+        patriot.style = galery[galery.length - 1].patriotStyle;
+        dot_1.style = galery[galery.length - 1].dot1Color;
+        dot_2.style = galery[galery.length - 1].dot2Color;
+        dot_3.style = galery[galery.length - 1].dot3Color;
+        imageProject.innerHTML = galery[galery.length - 1].imageProject;
+        city.innerHTML = galery[galery.length - 1].cityName;
+        area.innerHTML = galery[galery.length - 1].area;
+        repairTime.innerHTML = galery[galery.length - 1].repairTime;
+        currentIndex = (galery.length - 1);
     } else {
-        admiral.style = galery[currentIndex-1].admiralStyle;
-        sochi.style = galery[currentIndex-1].sochiStyle;
-        patriot.style = galery[currentIndex-1].patriotStyle;
-        dot_1.style = galery[currentIndex-1].dot1Color;
-        dot_2.style = galery[currentIndex-1].dot2Color;
-        dot_3.style = galery[currentIndex-1].dot3Color;
-        imageProject.innerHTML = galery[currentIndex-1].imageProject;
-        city.innerHTML = galery[currentIndex-1].cityName;
-        area.innerHTML = galery[currentIndex-1].area;
-        repairTime.innerHTML = galery[currentIndex-1].repairTime;
+        admiral.style = galery[currentIndex - 1].admiralStyle;
+        sochi.style = galery[currentIndex - 1].sochiStyle;
+        patriot.style = galery[currentIndex - 1].patriotStyle;
+        dot_1.style = galery[currentIndex - 1].dot1Color;
+        dot_2.style = galery[currentIndex - 1].dot2Color;
+        dot_3.style = galery[currentIndex - 1].dot3Color;
+        imageProject.innerHTML = galery[currentIndex - 1].imageProject;
+        city.innerHTML = galery[currentIndex - 1].cityName;
+        area.innerHTML = galery[currentIndex - 1].area;
+        repairTime.innerHTML = galery[currentIndex - 1].repairTime;
         --currentIndex;
     }
 }
