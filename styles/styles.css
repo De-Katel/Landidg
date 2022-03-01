@@ -294,6 +294,11 @@ h2 {
     font-size: 14px;
     line-height: 19.4px;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.project_example a:hover {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .project_example li {

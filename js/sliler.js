@@ -25,7 +25,7 @@ sochiProject = {
     dotTwoColor: 'color: white',
     dotThreColor: 'color: rgba(255, 255, 255, 0.3);',
     imageProject: '<img src="image/slider_2.jpg" alt="desing" width="679px" height="482px">',
-    mobileImageStyle:'background: url(\'image/slider_2.jpg\');background-size: 100%' 
+    mobileImageStyle: 'background: url(\'image/slider_2.jpg\');background-size: 100%'
 }
 
 admiralProject = {
@@ -40,7 +40,7 @@ admiralProject = {
     dotTwoColor: 'color: rgba(255, 255, 255, 0.3);',
     dotThreColor: 'color: rgba(255, 255, 255, 0.3);',
     imageProject: '<img src="image/slider_1.jpg" alt="desing" width="679px" height="482px">',
-    mobileImageStyle:'background: url(\'image/slider_1.jpg\');background-size: 100%' 
+    mobileImageStyle: 'background: url(\'image/slider_1.jpg\');background-size: 100%'
 }
 
 patriotProject = {
@@ -55,12 +55,12 @@ patriotProject = {
     dotTwoColor: 'color: rgba(255, 255, 255, 0.3);',
     dotThreColor: 'color: white',
     imageProject: '<img src="image/slider_3.jpg" alt="desing" width="679px" height="482px">',
-    mobileImageStyle:'background: url(\'image/slider_3.jpg\');background-size: 100%' 
+    mobileImageStyle: 'background: url(\'image/slider_3.jpg\');background-size: 100%'
 }
 
 admiral.style = admiralProject.admiralStyle;
 dotOne.style = admiralProject.dotOneColor;
-mobileImage.style ='background: url(\'image/slider_1.jpg\');background-size: 100%';
+mobileImage.style = 'background: url(\'image/slider_1.jpg\');background-size: 100%';
 
 let galery = [admiralProject, sochiProject, patriotProject];
 
@@ -78,7 +78,7 @@ function showSochi() {
     city.innerHTML = sochiProject.cityName;
     area.innerHTML = sochiProject.area;
     repairTime.innerHTML = sochiProject.repairTime;
-    
+
     currentIndex = 1;
 }
 
