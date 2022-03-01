@@ -5,11 +5,13 @@ const city = document.getElementById('City');
 const area = document.getElementById('Area');
 const repairTime = document.getElementById('Repair_time');
 const rowLeft = document.getElementById('row_left');
-const dot_1 = document.getElementById('dot1');
-const dot_2 = document.getElementById('dot2');
-const dot_3 = document.getElementById('dot3');
+const dotOne = document.getElementById('dot1');
+const dotTwo = document.getElementById('dot2');
+const dotThre = document.getElementById('dot3');
 const rowRight = document.getElementById('row_righ');
 const imageProject = document.getElementById('Image_project');
+const mobileImage = document.getElementById('foto');
+
 
 sochiProject = {
 
@@ -19,10 +21,11 @@ sochiProject = {
     cityName: 'Sochi<br>Thieves',
     area: '105 m2',
     repairTime: '4 months',
-    dot1Color: 'color: rgba(255, 255, 255, 0.3);',
-    dot2Color: 'color: white',
-    dot3Color: 'color: rgba(255, 255, 255, 0.3);',
-    imageProject: '<img src="image/slider_2.jpg" alt="desing" width="679px" height="482px">'
+    dotOneColor: 'color: rgba(255, 255, 255, 0.3);',
+    dotTwoColor: 'color: white',
+    dotThreColor: 'color: rgba(255, 255, 255, 0.3);',
+    imageProject: '<img src="image/slider_2.jpg" alt="desing" width="679px" height="482px">',
+    mobileImageStyle:'background: url(\'image/slider_2.jpg\');background-size: 100%' 
 }
 
 admiralProject = {
@@ -33,10 +36,11 @@ admiralProject = {
     cityName: 'Rostov-on-Don<br>LCD admiral',
     area: '81 m2',
     repairTime: '3.5 months',
-    dot1Color: 'color: white',
-    dot2Color: 'color: rgba(255, 255, 255, 0.3);',
-    dot3Color: 'color: rgba(255, 255, 255, 0.3);',
-    imageProject: '<img src="image/slider_1.jpg" alt="desing" width="679px" height="482px">'
+    dotOneColor: 'color: white',
+    dotTwoColor: 'color: rgba(255, 255, 255, 0.3);',
+    dotThreColor: 'color: rgba(255, 255, 255, 0.3);',
+    imageProject: '<img src="image/slider_1.jpg" alt="desing" width="679px" height="482px">',
+    mobileImageStyle:'background: url(\'image/slider_1.jpg\');background-size: 100%' 
 }
 
 patriotProject = {
@@ -47,14 +51,16 @@ patriotProject = {
     cityName: 'Rostov-on-Don<br>Patriotic',
     area: '93 m2',
     repairTime: '3 months',
-    dot1Color: 'color: rgba(255, 255, 255, 0.3);',
-    dot2Color: 'color: rgba(255, 255, 255, 0.3);',
-    dot3Color: 'color: white',
-    imageProject: '<img src="image/slider_3.jpg" alt="desing" width="679px" height="482px">'
+    dotOneColor: 'color: rgba(255, 255, 255, 0.3);',
+    dotTwoColor: 'color: rgba(255, 255, 255, 0.3);',
+    dotThreColor: 'color: white',
+    imageProject: '<img src="image/slider_3.jpg" alt="desing" width="679px" height="482px">',
+    mobileImageStyle:'background: url(\'image/slider_3.jpg\');background-size: 100%' 
 }
 
 admiral.style = admiralProject.admiralStyle;
-dot_1.style = admiralProject.dot1Color;
+dotOne.style = admiralProject.dotOneColor;
+mobileImage.style ='background: url(\'image/slider_1.jpg\');background-size: 100%';
 
 let galery = [admiralProject, sochiProject, patriotProject];
 
@@ -65,13 +71,14 @@ function showSochi() {
     admiral.style = sochiProject.admiralStyle;
     sochi.style = sochiProject.sochiStyle;
     patriot.style = sochiProject.patriotStyle;
-    dot_1.style = sochiProject.dot1Color;
-    dot_2.style = sochiProject.dot2Color;
-    dot_3.style = sochiProject.dot3Color;
+    dotOne.style = sochiProject.dotOneColor;
+    dotTwo.style = sochiProject.dotTwoColor;
+    dotThre.style = sochiProject.dotThreColor;
     imageProject.innerHTML = sochiProject.imageProject;
     city.innerHTML = sochiProject.cityName;
     area.innerHTML = sochiProject.area;
     repairTime.innerHTML = sochiProject.repairTime;
+    
     currentIndex = 1;
 }
 
@@ -80,9 +87,9 @@ function showAdmiral() {
     admiral.style = admiralProject.admiralStyle;
     sochi.style = admiralProject.sochiStyle;
     patriot.style = admiralProject.patriotStyle;
-    dot_1.style = admiralProject.dot1Color;
-    dot_2.style = admiralProject.dot2Color;
-    dot_3.style = admiralProject.dot3Color;
+    dotOne.style = admiralProject.dotOneColor;
+    dotTwo.style = admiralProject.dotTwoColor;
+    dotThre.style = admiralProject.dotThreColor;
     imageProject.innerHTML = admiralProject.imageProject;
     city.innerHTML = admiralProject.cityName;
     area.innerHTML = admiralProject.area;
@@ -95,9 +102,9 @@ function showPatriot() {
     admiral.style = patriotProject.admiralStyle;
     sochi.style = patriotProject.sochiStyle;
     patriot.style = patriotProject.patriotStyle;
-    dot_1.style = patriotProject.dot1Color;
-    dot_2.style = patriotProject.dot2Color;
-    dot_3.style = patriotProject.dot3Color;
+    dotOne.style = patriotProject.dotOneColor;
+    dotTwo.style = patriotProject.dotTwoColor;
+    dotThre.style = patriotProject.dotThreColor;
     imageProject.innerHTML = patriotProject.imageProject;
     city.innerHTML = patriotProject.cityName;
     area.innerHTML = patriotProject.area;
@@ -112,9 +119,10 @@ function next() {
         admiral.style = galery[0].admiralStyle;
         sochi.style = galery[0].sochiStyle;
         patriot.style = galery[0].patriotStyle;
-        dot_1.style = galery[0].dot1Color;
-        dot_2.style = galery[0].dot2Color;
-        dot_3.style = galery[0].dot3Color;
+        dotOne.style = galery[0].dotOneColor;
+        dotTwo.style = galery[0].dotTwoColor;
+        dotThre.style = galery[0].dotThreColor;
+        mobileImage.style = galery[0].mobileImageStyle;
         imageProject.innerHTML = galery[0].imageProject;
         city.innerHTML = galery[0].cityName;
         area.innerHTML = galery[0].area;
@@ -124,9 +132,10 @@ function next() {
         admiral.style = galery[currentIndex + 1].admiralStyle;
         sochi.style = galery[currentIndex + 1].sochiStyle;
         patriot.style = galery[currentIndex + 1].patriotStyle;
-        dot_1.style = galery[currentIndex + 1].dot1Color;
-        dot_2.style = galery[currentIndex + 1].dot2Color;
-        dot_3.style = galery[currentIndex + 1].dot3Color;
+        dotOne.style = galery[currentIndex + 1].dotOneColor;
+        dotTwo.style = galery[currentIndex + 1].dotTwoColor;
+        dotThre.style = galery[currentIndex + 1].dotThreColor;
+        mobileImage.style = galery[currentIndex + 1].mobileImageStyle;
         imageProject.innerHTML = galery[currentIndex + 1].imageProject;
         city.innerHTML = galery[currentIndex + 1].cityName;
         area.innerHTML = galery[currentIndex + 1].area;
@@ -142,9 +151,10 @@ function prev() {
         admiral.style = galery[galery.length - 1].admiralStyle;
         sochi.style = galery[galery.length - 1].sochiStyle;
         patriot.style = galery[galery.length - 1].patriotStyle;
-        dot_1.style = galery[galery.length - 1].dot1Color;
-        dot_2.style = galery[galery.length - 1].dot2Color;
-        dot_3.style = galery[galery.length - 1].dot3Color;
+        dotOne.style = galery[galery.length - 1].dotOneColor;
+        dotTwo.style = galery[galery.length - 1].dotTwoColor;
+        dotThre.style = galery[galery.length - 1].dotThreColor;
+        mobileImage.style = galery[galery.length - 1].mobileImageStyle;
         imageProject.innerHTML = galery[galery.length - 1].imageProject;
         city.innerHTML = galery[galery.length - 1].cityName;
         area.innerHTML = galery[galery.length - 1].area;
@@ -154,9 +164,10 @@ function prev() {
         admiral.style = galery[currentIndex - 1].admiralStyle;
         sochi.style = galery[currentIndex - 1].sochiStyle;
         patriot.style = galery[currentIndex - 1].patriotStyle;
-        dot_1.style = galery[currentIndex - 1].dot1Color;
-        dot_2.style = galery[currentIndex - 1].dot2Color;
-        dot_3.style = galery[currentIndex - 1].dot3Color;
+        dotOne.style = galery[currentIndex - 1].dotOneColor;
+        dotTwo.style = galery[currentIndex - 1].dotTwoColor;
+        dotThre.style = galery[currentIndex - 1].dotThreColor;
+        mobileImage.style = galery[currentIndex - 1].mobileImageStyle;
         imageProject.innerHTML = galery[currentIndex - 1].imageProject;
         city.innerHTML = galery[currentIndex - 1].cityName;
         area.innerHTML = galery[currentIndex - 1].area;
@@ -168,10 +179,10 @@ function prev() {
 rowRight.addEventListener('click', next);
 
 admiral.addEventListener('click', showAdmiral);
-dot_1.addEventListener('click', showAdmiral);
+dotOne.addEventListener('click', showAdmiral);
 sochi.addEventListener('click', showSochi)
-dot_2.addEventListener('click', showSochi)
+dotTwo.addEventListener('click', showSochi)
 patriot.addEventListener('click', showPatriot);
-dot_3.addEventListener('click', showPatriot);
+dotThre.addEventListener('click', showPatriot);
 
 rowLeft.addEventListener('click', prev);
